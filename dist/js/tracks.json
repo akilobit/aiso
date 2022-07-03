@@ -1,0 +1,67 @@
+{
+	"tracks":[
+		{
+			"title":"Spacewalker (2021 Remix)",
+			"cover":"spacewalker",
+			"date":"March 6, 2021",
+			"tags":["303","Acid","Psychedelic Trance"],
+			"url":"spacewalker"
+		},
+		{
+			"title":"Jotun Dance (Original Mix)",
+			"cover":"jotun_dance",
+			"date":"September 16, 2020",
+			"tags":["Trance"],
+			"url":"jotun-dance"
+		},
+		{
+			"title":"Dirty Little Secret (Ohm The Bass)",
+			"cover":"dirty_little_secret",
+			"date":"January 18, 2020",
+			"tags":["Bass", "House"],
+			"url":"dirty-little-secretohm-the-bass"
+		},
+		{
+			"title":"Ayumi Hamasaki – Depend on you (AISO Club Mix)",
+			"cover":"ayumi_hamasaki-depend_on_you",
+			"date":"December 8, 2019",
+			"tags":["Trance"],
+			"url":"depend-on-you"
+		},
+		{
+			"title":"The Mission (Original Mix)",
+			"cover":"the_mission",
+			"date":"December 4, 2019",
+			"tags":["Trance"],
+			"url":"the-mission"
+		},
+		{
+			"title":"A Druids Tale (Original Mix)",
+			"cover":"a_druids_tale",
+			"date":"December 15, 2018",
+			"tags":["Trance"],
+			"url":"adruidstale"
+		},
+		{
+			"title":"Wormhole (Rework Mashup)",
+			"cover":"wormhole",
+			"date":"July 06, 2018",
+			"tags":["Psychedelic Trance"],
+			"url":"wormhole-reworkmashup-test/s-nwlfE"
+		},
+		{
+			"title":"Burnoia - Mandrel Expand (AISO Remix)",
+			"cover":"burnoia-mandre_expand_aiso_remix",
+			"date":"April 25, 2013",
+			"tags":["Trance"],
+			"url":"burnoia-mandrel-expand-aiso-2"
+		},
+		{
+			"title":"Wormhole (Original Mix)",
+			"cover":"wormhole",
+			"date":"January 14, 2012",
+			"tags":["Psychedelic Trance"],
+			"url":"wormhole/s-wDM7i"
+		}
+	]
+}
