@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TOD Offset Calculator</title>
+	<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-12">
+			<h1>TOD Offset Calculator</h1>
+		</div>
+	</div>
+
+	<form class="row g-3" onsubmit="event.preventDefault(); refresh_form_data();">
+
+		<div class="col-auto">
+			<label for="" class="form-label">Date</label>
+			<input type="date" class="form-control" name="date">
+		</div>
+
+		<div class="col-auto">
+			<label for="" class="form-label">Time</label>
+			<input type="time" class="form-control" name="time">
+		</div>
+		
+		<div class="col-12">
+			<button type="submit" class="btn btn-primary mb-3">Refresh</button>
+		</div>
+
+	</form>
+
+	<div class="row">
+		<div class="col-12">
+			<h5>Offset:</h5>
+			<p id="offset" class="fs-1">0</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	const offset_value = document.querySelector('#offset')
+	const input_date = document.querySelector('input[type="date"]')
+	const input_time = document.querySelector('input[type="time"]')
+
+	const now = new Date()
+	input_date.value = moment(now).format('YYYY-MM-DD')
+	input_time.value = moment(now).format('HH:mm')
+
+	function refresh_form_data(form) {
+		let timestamp = input_date.value + 'T' + input_time.value
+		offset_value.innerHTML = get_offset(timestamp)
+	}
+
+	function get_offset(timestamp=null) {
+		let now = new Date()
+		return Math.round((new Date(timestamp) - now) / 1000 / 60)
+	}
+</script>
+
+</body>
+</html>
